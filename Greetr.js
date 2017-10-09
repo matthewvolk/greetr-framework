@@ -10,6 +10,7 @@
   var Greetr = function(firstName, lastName, language){
     // Return new object
     return new Greetr.init(firstName, lastName, language);
+
   }
 
   // Create properties
@@ -125,6 +126,9 @@
     self.firstName = firstName || "";
     self.lastName = lastName || "";
     self.language = language || "en";
+
+    self.validate();
+    
   }
 
   Greetr.init.prototype = Greetr.prototype;
